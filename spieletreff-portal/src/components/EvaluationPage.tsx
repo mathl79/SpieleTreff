@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import type { Submission } from '@/types/game';
 
-// API URL mit env Variable für Entwicklung vs. Produktion
+// API URL ohne Port 3001
 const API_URL = import.meta.env.PROD 
-  ? 'https://mobile-tieraerztin-passau.de:3001/api'
+  ? 'https://mobile-tieraerztin-passau.de/api'
   : 'http://localhost:3001/api';
 
 // Sorting types
@@ -30,6 +30,7 @@ const EvaluationPage: React.FC = () => {
     // API-Verbindung testen
     const testApiConnection = async () => {
       try {
+        console.log('Testing API connection to:', API_URL);
         const response = await fetch(`${API_URL}/submissions`);
         if (response.ok) {
           setApiStatus('connected');

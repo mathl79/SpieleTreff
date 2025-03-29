@@ -11,9 +11,9 @@ export default function SpieleTreffPortal() {
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
 
-  // API URL mit env Variable für Entwicklung vs. Produktion
+  // API URL ohne Port 3001 - lasse den Browser den Standard-HTTPS-Port verwenden
   const API_URL = import.meta.env.PROD 
-    ? 'https://mobile-tieraerztin-passau.de:3001/api'
+    ? 'https://mobile-tieraerztin-passau.de/api'
     : 'http://localhost:3001/api';
   
   // Test API Verbindung beim Komponenten-Laden
@@ -22,6 +22,7 @@ export default function SpieleTreffPortal() {
   useEffect(() => {
     const testApiConnection = async () => {
       try {
+        console.log('Testing API connection to:', API_URL);
         const response = await fetch(`${API_URL}/game-stats`);
         if (response.ok) {
           setApiStatus('connected');
@@ -55,15 +56,13 @@ export default function SpieleTreffPortal() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* API-Status-Anzeige (nur während der Entwicklung sichtbar) */}
-      {import.meta.env.DEV && (
-        <div className={`fixed bottom-0 right-0 p-2 m-4 rounded-md z-50 ${
-          apiStatus === 'connected' ? 'bg-green-500' : 
-          apiStatus === 'error' ? 'bg-red-500' : 'bg-yellow-500'
-        }`}>
-          API: {apiStatus === 'connected' ? 'Verbunden' : 
-               apiStatus === 'error' ? 'Fehler' : 'Verbindung...'}
-        </div>
-      )}
+      {/* API-Status-Anzeige (immer sichtbar für Debugging) */}
+      <div className={`fixed bottom-0 right-0 p-2 m-4 rounded-md z-50 text-white ${
+        apiStatus === 'connected' ? 'bg-green-500' : 
+        apiStatus === 'error' ? 'bg-red-500' : 'bg-yellow-500'
+      }`}>
+        API: {apiStatus === 'connected' ? 'Verbunden' : 
+             apiStatus === 'error' ? 'Fehler' : 'Verbindung...'}
+      </div>
     
       {/* Rest des Codes ... */}
