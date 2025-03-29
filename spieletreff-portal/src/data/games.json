@@ -3,7 +3,7 @@
       "id": 1, 
       "name": "Siedler von Catan", 
       "popular": true, 
-      "imageUrl": "./images/games/catan.webp",
+      "imageUrl": "/images/games/catan.webp",
       "popularityPercentage": 85,
       "playerCount": {
         "min": 3,
@@ -18,195 +18,177 @@
       "id": 2, 
       "name": "Uno", 
       "popular": true, 
-      "imageUrl": "./images/games/uno.webp",
-      "popularityPercentage": 92,
+      "imageUrl": "/images/games/uno.webp",
+      "popularityPercentage": 78,
       "playerCount": {
         "min": 2,
         "max": 10
       },
       "difficulty": 1,
       "manualLinks": [
-        {"type": "www", "url": "https://service.mattel.com/instruction_sheets/52277-1163.pdf"}
+        {"type": "pdf", "url": "/manuals/uno.pdf"},
+        {"type": "www", "url": "https://www.mattel.de/de-de/uno-spielregeln"}
       ]
     },
     {
       "id": 3, 
-      "name": "Azul", 
-      "popular": true, 
-      "imageUrl": "./images/games/azul.jpg",
-      "popularityPercentage": 75,
-      "playerCount": {
-        "min": 2,
-        "max": 4
-      },
-      "difficulty": 2,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.spielregeln.de/azul-anleitung.html"}
-      ]
-    },
-    {
-      "id": 4, 
       "name": "Schach", 
-      "popular": false, 
-      "imageUrl": "./images/games/chess.jpg",
-      "popularityPercentage": 65,
+      "popular": true, 
+      "imageUrl": "/images/games/chess.jpg",
+      "popularityPercentage": 72,
       "playerCount": {
         "min": 2,
         "max": 2
       },
       "difficulty": 4,
       "manualLinks": [
-        {"type": "www", "url": "https://www.chess.com/de/lernen-schach-zu-spielen#chess-rules"}
+        {"type": "www", "url": "https://www.chess.com/de/lernen-schach-spielen"}
+      ]
+    },
+    {
+      "id": 4, 
+      "name": "Monopoly", 
+      "popular": false, 
+      "imageUrl": "/images/games/monopoly.webp",
+      "playerCount": {
+        "min": 2,
+        "max": 6
+      },
+      "difficulty": 2,
+      "manualLinks": [
+        {"type": "pdf", "url": "/manuals/monopoly.pdf"}
       ]
     },
     {
       "id": 5, 
-      "name": "Monopoly", 
-      "popular": true, 
-      "imageUrl": "./images/games/monopoly.webp",
-      "popularityPercentage": 78,
+      "name": "Mensch ärgere Dich nicht", 
+      "popular": false, 
+      "imageUrl": "/images/games/mensch.jpg",
       "playerCount": {
         "min": 2,
-        "max": 8
+        "max": 4
       },
-      "difficulty": 2,
+      "difficulty": 1,
       "manualLinks": [
-        {"type": "www", "url": "https://www.monopoly.com/wp-content/uploads/2023/02/Monopoly_CE_Classic_Rules.pdf"}
+        {"type": "www", "url": "https://www.schmidtspiele.de/spielanleitungen"}
       ]
     },
     {
       "id": 6, 
       "name": "Wizard", 
       "popular": false, 
-      "imageUrl": "./images/games/wizard.jpg",
-      "popularityPercentage": 60,
+      "imageUrl": "/images/games/wizard.jpg",
       "playerCount": {
         "min": 3,
         "max": 6
       },
       "difficulty": 2,
       "manualLinks": [
-        {"type": "www", "url": "https://www.amigo-spiele.de/spiel/wizard"}
+        {"type": "pdf", "url": "/manuals/wizard.pdf"}
       ]
     },
     {
       "id": 7, 
-      "name": "Cluedo", 
-      "popular": false, 
-      "imageUrl": "./images/games/cluedo.jpg",
-      "popularityPercentage": 62,
-      "playerCount": {
-        "min": 3,
-        "max": 6
-      },
-      "difficulty": 2,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.hasbro.com/common/instruct/Clue.PDF"}
-      ]
-    },
-    {
-      "id": 8, 
-      "name": "Jenga", 
-      "popular": true, 
-      "imageUrl": "./images/games/jenga.jpg",
-      "popularityPercentage": 85,
-      "playerCount": {
-        "min": 2,
-        "max": 8
-      },
-      "difficulty": 1,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.hasbro.com/common/instruct/Jenga.PDF"}
-      ]
-    },
-    {
-      "id": 9, 
       "name": "Pictures", 
       "popular": false, 
-      "imageUrl": "./images/games/pictures.webp",
-      "popularityPercentage": 55,
+      "imageUrl": "/images/games/pictures.webp",
       "playerCount": {
         "min": 3,
         "max": 5
       },
-      "difficulty": 2,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.spielregeln.de/pictures-anleitung-spielregeln.html"}
-      ]
+      "difficulty": 2
     },
     {
-      "id": 10, 
-      "name": "Mensch ärgere dich nicht", 
-      "popular": true, 
-      "imageUrl": "./images/games/mensch.jpg",
-      "popularityPercentage": 80,
-      "playerCount": {
-        "min": 2,
-        "max": 4
-      },
-      "difficulty": 1,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.spielregeln.de/mensch-aergere-dich-nicht-spielregeln-spielanleitung.html"}
-      ]
-    },
-    {
-      "id": 11, 
-      "name": "Dame", 
+      "id": 8, 
+      "name": "Jenga", 
       "popular": false, 
-      "imageUrl": "./images/games/dame.avif",
-      "popularityPercentage": 45,
+      "imageUrl": "/images/games/jenga.jpg",
       "playerCount": {
         "min": 2,
-        "max": 2
+        "max": 8
       },
-      "difficulty": 2,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.brettspielnetz.de/spielregeln/dame.php"}
-      ]
+      "difficulty": 1
     },
     {
-      "id": 12, 
-      "name": "Mühle", 
-      "popular": false, 
-      "imageUrl": "./images/games/mühle.jpg",
-      "popularityPercentage": 40,
-      "playerCount": {
-        "min": 2,
-        "max": 2
-      },
-      "difficulty": 2,
-      "manualLinks": [
-        {"type": "www", "url": "https://www.spielregeln.de/muehle-spielregeln-anleitung.html"}
-      ]
-    },
-    {
-      "id": 13, 
+      "id": 9, 
       "name": "Löwenherz", 
       "popular": false, 
-      "imageUrl": "./images/games/löwenherz.jpg",
-      "popularityPercentage": 35,
+      "imageUrl": "/images/games/löwenherz.jpg",
       "playerCount": {
         "min": 2,
         "max": 4
       },
       "difficulty": 3,
       "manualLinks": [
-        {"type": "www", "url": "https://www.spielregeln.de/loewen-herz-spielregeln-anleitung.html"}
+        {"type": "pdf", "url": "/manuals/lowenherz.pdf"}
+      ]
+    },
+    {
+      "id": 10, 
+      "name": "9erln", 
+      "popular": false, 
+      "imageUrl": "/images/games/Spielkarten.avif",
+      "playerCount": {
+        "min": 2,
+        "max": 4
+      },
+      "difficulty": 2,
+      "manualLinks": [
+        {"type": "www", "url": "https://www.spielregeln.de/9erln.html"}
+      ]
+    },
+    {
+      "id": 11, 
+      "name": "AZUL", 
+      "popular": false, 
+      "imageUrl": "/images/games/azul.jpg",
+      "playerCount": {
+        "min": 2,
+        "max": 4
+      },
+      "difficulty": 2,
+      "manualLinks": [
+        {"type": "www", "url": "https://www.asmodee.de/produkte/azul"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=oC6KRa55oXs"}
+      ]
+    },
+    {
+      "id": 12, 
+      "name": "cluedo", 
+      "popular": false, 
+      "imageUrl": "/images/games/cluedo.jpg",
+      "playerCount": {
+        "min": 3,
+        "max": 6
+      },
+      "difficulty": 2
+    },
+    {
+      "id": 13, 
+      "name": "Mühle", 
+      "popular": false, 
+      "imageUrl": "/images/games/mühle.jpg",
+      "playerCount": {
+        "min": 2,
+        "max": 2
+      },
+      "difficulty": 3,
+      "manualLinks": [
+        {"type": "www", "url": "https://www.spielregeln.de/muehle.html"}
       ]
     },
     {
       "id": 14, 
-      "name": "Skipbo", 
+      "name": "Dame", 
       "popular": false, 
-      "imageUrl": "./images/games/Spielkarten.avif",
-      "popularityPercentage": 55,
+      "imageUrl": "/images/games/dame.avif",
       "playerCount": {
         "min": 2,
-        "max": 6
+        "max": 2
       },
-      "difficulty": 1,
+      "difficulty": 3,
       "manualLinks": [
-        {"type": "www", "url": "https://service.mattel.com/instruction_sheets/42050%20Skip-Bo.pdf"}
+        {"type": "www", "url": "https://www.spielregeln.de/dame.html"}
       ]
     }
   ]
