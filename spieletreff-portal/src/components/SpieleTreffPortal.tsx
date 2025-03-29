@@ -11,7 +11,7 @@ import { Game } from '@/types/game'; // Import the Game type
 import initialGamesData from '@/data/games.json';
 
 // Backend API URL
-const API_URL = 'https://92.60.38.222:3001/api';
+const API_URL = 'https://mobile-tieraerztin-passau.de:3001/api';
 
 // Interface für die GameStats vom Backend (behalten für die API-Antwortstruktur)
 interface GameStats {

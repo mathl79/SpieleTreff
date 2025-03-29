@@ -22,7 +22,7 @@ interface Submission {
 type SortField = keyof Submission | '';
 type SortDirection = 'asc' | 'desc';
 
-const API_URL = 'http://192.168.100.85:3001/api'; // Backend API URL
+const API_URL = 'https://mobile-tieraerztin-passau.de:3001/api'; // Backend API URL
 
 const EvaluationPage: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
